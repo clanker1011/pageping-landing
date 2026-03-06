@@ -38,7 +38,7 @@
     <p class="sub">PagePing monitors key pages (home, pricing, services, forms) and sends clean, shareable reports: what changed, when it changed, and what it looked like.</p>
 
     <div class="cta">
-      <a class="btn primary" href="mailto:hello@pageping.app?subject=PagePing%20beta%20access">Request beta access</a>
+      <a class="btn secondary" href="#signup">Join the beta</a>
       <a class="btn secondary" href="#how">How it works</a>
     </div>
 
@@ -57,7 +57,22 @@
       </div>
     </div>
 
-    <div class="demo">
+    <div id="signup" class="demo">
+      <strong>Join the beta</strong>
+      <form style="margin-top:12px;display:grid;gap:10px;max-width:520px" method="POST" action="/api/beta-signup">
+        <input name="email" type="email" required placeholder="you.com" style="padding:12px 12px;border-radius:12px;border:1px solid rgba(233,238,252,.18);background:rgba(7,16,36,.35);color:var(--text)"/>
+        <input name="agency" type="text" placeholder="Agency name (optional)" style="padding:12px 12px;border-radius:12px;border:1px solid rgba(233,238,252,.18);background:rgba(7,16,36,.35);color:var(--text)"/>
+        <button class="btn primary" type="submit" style="border:0;cursor:pointer">Request access</button>
+        <div style="color:var(--muted);font-size:13px">We'll only use this to contact you about the beta. No spam.</div>
+      </form>
+
+      <div style="height:14px"></div>
+
+      <strong>Early MVP scope</strong>
+      <p style="margin:10px 0 0;color:var(--muted)">Email + Slack alerts, screenshot diffs, URL groups per client, and a shareable change log. Billing via Stripe.</p>
+    </div>
+
+    <div class="demo"
       <strong>Early MVP scope</strong>
       <p style="margin:10px 0 0;color:var(--muted)">Email + Slack alerts, screenshot diffs, URL groups per client, and a shareable change log. Billing via Stripe. If you want a pilot, email <code>hello@pageping.app</code>.</p>
     </div>
