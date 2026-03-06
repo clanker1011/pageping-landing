@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PagePing — Website change monitoring for agencies</title>
+  <meta name="description" content="PagePing monitors your clients’ websites and sends clear, shareable change reports (with screenshots + diffs)." />
+  <style>
+    :root{--bg:#0b1020;--card:#101a33;--text:#e9eefc;--muted:#a8b3d6;--accent:#7c5cff;--accent2:#2dd4bf;}
+    *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:radial-gradient(1200px 600px at 20% 10%, #1a2450 0%, var(--bg) 55%); color:var(--text)}
+    a{color:inherit} .wrap{max-width:980px;margin:0 auto;padding:48px 20px}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:44px}
+    .logo{font-weight:800;letter-spacing:.2px} .pill{padding:8px 12px;border:1px solid rgba(233,238,252,.14);border-radius:999px;color:var(--muted);font-size:13px}
+    h1{font-size:46px;line-height:1.05;margin:0 0 12px}
+    .sub{font-size:18px;color:var(--muted);max-width:64ch;margin:0 0 26px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 34px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#4ea1ff);color:#071024}
+    .btn.secondary{border:1px solid rgba(233,238,252,.18);color:var(--text)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+    .card{background:rgba(16,26,51,.72);border:1px solid rgba(233,238,252,.12);border-radius:16px;padding:16px}
+    .card h3{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
+    .demo{margin-top:18px;border-radius:18px;border:1px solid rgba(233,238,252,.12);background:linear-gradient(180deg, rgba(124,92,255,.12), rgba(45,212,191,.05));padding:18px}
+    code{background:rgba(233,238,252,.08);padding:2px 6px;border-radius:8px}
+    footer{margin-top:46px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media (max-width:860px){h1{font-size:38px}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="logo">PagePing</div>
+      <div class="pill">Website change monitoring • built for agencies</div>
+    </div>
+
+    <h1>Know when your clients’ sites change — <br/>and prove it with screenshots.</h1>
+    <p class="sub">PagePing monitors key pages (home, pricing, services, forms) and sends clean, shareable reports: what changed, when it changed, and what it looked like.</p>
+
+    <div class="cta">
+      <a class="btn primary" href="mailto:hello@pageping.app?subject=PagePing%20beta%20access">Request beta access</a>
+      <a class="btn secondary" href="#how">How it works</a>
+    </div>
+
+    <div id="how" class="grid">
+      <div class="card">
+        <h3>1) Add URLs</h3>
+        <p>Drop in the pages you care about. Choose daily or more frequent checks.</p>
+      </div>
+      <div class="card">
+        <h3>2) We monitor</h3>
+        <p>We capture HTML + screenshots and detect meaningful changes.</p>
+      </div>
+      <div class="card">
+        <h3>3) You get reports</h3>
+        <p>Email + Slack alerts with diffs, before/after screenshots, and a share link.</p>
+      </div>
+    </div>
+
+    <div class="demo">
+      <strong>Early MVP scope</strong>
+      <p style="margin:10px 0 0;color:var(--muted)">Email + Slack alerts, screenshot diffs, URL groups per client, and a shareable change log. Billing via Stripe. If you want a pilot, email <code>hello@pageping.app</code>.</p>
+    </div>
+
+    <footer>
+      <div>© <span id="y"></span> PagePing</div>
+      <div>Contact: <a href="mailto:hello@pageping.app">hello@pageping.app</a></div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
